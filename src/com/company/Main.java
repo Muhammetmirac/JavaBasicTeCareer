@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.OOP.*;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -165,5 +167,12 @@ public class Main {
         }).collect(Collectors.toList());
         System.out.println(streamExampleList);
         System.out.println(streamList);
+
+
+        // OOP
+        UcamayanCanlı dogukan  = new Dogukan();
+        UcamayanCanlı tarcın  = new Tarcın();
+        dogukan.yuru();
+        tarcın.yuru();
     }
 }
