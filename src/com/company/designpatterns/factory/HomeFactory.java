@@ -11,5 +11,5 @@ public abstract class HomeFactory {
         return HOME_BUILDER.addDoor().addWall();
     }
 
-    public abstract  Home createHome();
+    public abstract Home createHome();
 }
