@@ -1,33 +1,52 @@
 package com.company.designpatterns.builder;
 
 public class HomeBuilder implements Builder<Home>{
+
+    private Home home;
+
+    public HomeBuilder() {
+        this.reset();
+    }
+
     @Override
     public Builder<Home> addWall() {
-        return null;
+        home.setWall(true);
+        return this;
     }
 
     @Override
     public Builder<Home> addDoor() {
-        return null;
+        home.setDoors(true);
+        return this;
     }
 
     @Override
     public Builder<Home> addGarage() {
-        return null;
+        home.setGarage(true);
+        return this;
     }
 
     @Override
     public Builder<Home> addGarden() {
-        return null;
+        home.setGarden(true);
+        return this;
+    }
+
+    @Override
+    public Builder<Home> addChildRoom() {
+        home.setChildRoom(true);
+        return this;
     }
 
     @Override
     public Builder<Home> reset() {
-        return null;
+        home = new Home();
+        return this;
     }
 
     @Override
     public Home getResult() {
-        return null;
+        return this.home;
     }
+
 }
