@@ -9,6 +9,5 @@ public class BuilderMain {
         homeBuilder = new HomeBuilder();
         home = homeBuilder.addDoor().addGarage().addWall().getResult();
         System.out.println(home);
-        System.out.println(HomeBuilder.getTotalCreatedHomeNumber());
     }
 }
